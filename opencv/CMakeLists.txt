@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Bounding )
+find_package( OpenCV REQUIRED )
+add_executable( Bounding Bounding.cpp )
+target_link_libraries( Bounding ${OpenCV_LIBS} )
